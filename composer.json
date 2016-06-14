@@ -1,3 +1,4 @@
+
 {
     "name": "knox/africastalking",
     "description": "A Laravel Implementation of the Africa's Talking API",
@@ -10,5 +11,11 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Knox\\AFT\\": "src/"
+        }
+    }
 }
+
