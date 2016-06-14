@@ -1,0 +1,14 @@
+{
+    "name": "knox/africastalking",
+    "description": "A Laravel Implementation of the Africa's Talking API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Timothy Radier",
+            "email": "timothyradier@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
