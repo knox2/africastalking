@@ -24,7 +24,10 @@
         "laravel": {
             "providers": [
                 "Knox\\AFT\\AFTServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "AFT": "Knox\\AFT\\Facades\\AFT"
+            }
         }
     }
 }
