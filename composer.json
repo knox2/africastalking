@@ -16,6 +16,16 @@
         "psr-4": {
             "Knox\\AFT\\": "src/"
         }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Knox\\AFT\\AFTServiceProvider"
+            ]
+        }
     }
 }
 

@@ -16,6 +16,8 @@ class AFTServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/Config/aft.php' => config_path('aft.php'),
         ], 'aft');
+
+        $this->mergeConfigFrom( __DIR__.'/Config/aft.php', 'aft');
     }
 
     /**
@@ -25,11 +27,9 @@ class AFTServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom( __DIR__.'/Config/aft.php', 'aft');
-
-
-        $this->app->singleton('aft', function($app) {
-            return new AFT;
+        $this->app->singleton(AFT::class, function () {
+            return new AFT();
         });
+        $this->app->alias(AFT::class, 'AFT');
     }
 }
