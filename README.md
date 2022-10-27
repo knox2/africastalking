@@ -1,6 +1,6 @@
-#AfricasTalking Laravel Package
+# AfricasTalking Laravel Package
 
-##Installation
+## Installation
 
 
 ```
@@ -8,7 +8,7 @@ composer require knox/africastalking
 ```
 
 
-##Config
+## Config
 Get the below details from africastalking
 
 ```
@@ -16,8 +16,9 @@ AFT_APIKEY=apikey
 AFT_USERNAME=username
 ```
 
-##Usage
-###Sending SMS
+## Usage
+
+### Sending SMS
 
 #### Without sender ID
 
